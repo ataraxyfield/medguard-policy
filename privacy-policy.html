@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedGuard 藥物守護 — 隱私權政策</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+            line-height: 1.7;
+            max-width: 720px;
+            margin: 2rem auto;
+            padding: 0 1.25rem;
+            color: #1a1a1a;
+        }
+        h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.25rem; }
+        .meta { color: #666; font-size: 0.9rem; }
+        ul { padding-left: 1.25rem; }
+        a { color: #1565c0; }
+        table { border-collapse: collapse; width: 100%; font-size: 0.9rem; margin: 0.75rem 0; }
+        th, td { border: 1px solid #ddd; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+        th { background: #f5f5f5; }
+    </style>
+</head>
+<body>
+
+<h1>MedGuard 藥物守護 隱私權政策</h1>
+<p class="meta">最後更新：2026 年 6 月 29 日<br>
+應用程式名稱：MedGuard 藥物守護<br>
+開發者：Ataraxy Field<br>
+套件名稱：com.ataraxyfield.medguard</p>
+
+<p>感謝您使用 MedGuard 藥物守護（以下簡稱「本 App」）。本隱私權政策說明我們如何收集、使用、儲存與保護您的個人資料。使用本 App 即表示您同意本政策之內容。</p>
+
+<h2>一、我們收集的資料</h2>
+<p>本 App 為用藥管理工具，所處理的資料皆與您的用藥紀錄相關。依您是否登入帳號，資料處理方式如下：</p>
+
+<h3>1. 未登入帳號時（僅本機使用）</h3>
+<p>以下資料僅儲存在您的裝置本機，不會上傳至我們的伺服器：</p>
+<ul>
+    <li>藥品與藥包名稱、劑量、服用頻率與天數</li>
+    <li>用藥排程與服藥紀錄（含是否已服藥、實際服藥時間）</li>
+    <li>醫院／診所名稱、醫師姓名（若您自行填寫）</li>
+    <li>藥包或藥物外觀照片（透過相機拍攝，儲存於裝置內部儲存空間）</li>
+    <li>您自行輸入的藥物說明、副作用或外觀備註</li>
+</ul>
+
+<h3>2. 登入帳號時（雲端同步，選用功能）</h3>
+<p>若您選擇以 Google 帳號或電子郵件註冊／登入，我們會透過 Google Firebase 服務處理以下資料，以便跨裝置同步：</p>
+<ul>
+    <li>帳號識別資訊（Google 帳號之電子郵件地址，或您註冊時提供的電子郵件）</li>
+    <li>上述用藥相關資料之文字內容（藥品名稱、排程、服藥紀錄、醫院資訊等）</li>
+</ul>
+<p><strong>藥包照片不會上傳至雲端</strong>，僅保留在您的裝置本機。雲端同步的資料中可能包含本機照片的路徑字串，但該路徑無法在其他裝置上還原照片內容。</p>
+
+<h3>3. 我們不會主動收集的資料</h3>
+<ul>
+    <li>精確 GPS 定位</li>
+    <li>通訊錄、簡訊或通話紀錄</li>
+    <li>裝置上其他 App 的使用行為</li>
+    <li>用於廣告追蹤的識別碼</li>
+</ul>
+
+<h2>二、裝置權限說明</h2>
+<p>本 App 會在必要時向您請求以下權限，且僅用於對應功能：</p>
+<table>
+    <tr><th>權限</th><th>用途</th></tr>
+    <tr><td>通知（POST_NOTIFICATIONS）</td><td>在預定時間提醒您服藥</td></tr>
+    <tr><td>精確鬧鐘（SCHEDULE_EXACT_ALARM）</td><td>確保服藥提醒準時觸發</td></tr>
+    <tr><td>全螢幕意圖（USE_FULL_SCREEN_INTENT）</td><td>在鎖定畫面顯示服藥提醒</td></tr>
+    <tr><td>開機完成（RECEIVE_BOOT_COMPLETED）</td><td>裝置重開機後重新排定提醒</td></tr>
+    <tr><td>前景服務（FOREGROUND_SERVICE）</td><td>維持服藥提醒服務穩定運作</td></tr>
+    <tr><td>相機（CAMERA）</td><td>拍攝藥包外觀照片（選用）</td></tr>
+    <tr><td>網路（INTERNET）</td><td>雲端同步、查詢公開藥品資料庫</td></tr>
+</table>
+<p>您可隨時於裝置系統設定中撤銷權限；撤銷後，對應功能可能無法正常運作。</p>
+
+<h2>三、資料的使用目的</h2>
+<p>我們僅將您的資料用於以下目的：</p>
+<ul>
+    <li>建立與管理用藥排程、發送服藥提醒</li>
+    <li>記錄與顯示服藥歷史、匯出 PDF 報表</li>
+    <li>提供藥物資訊查詢與潛在交互作用警示（參考公開醫學資料，非醫療診斷）</li>
+    <li>透過裝置端 ML Kit 將提醒文字翻譯為印尼文、越南文或英文（翻譯在裝置本機進行，您的用藥內容不會傳送至 Google 翻譯伺服器）</li>
+    <li>在您登入帳號時，於您的裝置間同步用藥資料</li>
+</ul>
+<p>我們<strong>不會</strong>將您的個人資料出售、出租或提供給第三方用於行銷目的。</p>
+
+<h2>四、第三方服務</h2>
+<p>本 App 使用以下第三方服務，其各自受該服務提供者之隱私權政策規範：</p>
+<table>
+    <tr><th>服務</th><th>提供者</th><th>用途</th></tr>
+    <tr><td>Firebase Authentication</td><td>Google LLC</td><td>帳號登入與身分驗證</td></tr>
+    <tr><td>Cloud Firestore</td><td>Google LLC</td><td>登入後的用藥資料雲端儲存與同步</td></tr>
+    <tr><td>Google 登入</td><td>Google LLC</td><td>以 Google 帳號快速登入</td></tr>
+    <tr><td>ML Kit 離線翻譯</td><td>Google LLC</td><td>裝置端翻譯服藥提醒文字</td></tr>
+    <tr><td>openFDA 公開 API</td><td>美國 FDA</td><td>查詢公開藥品仿單資料（僅傳送藥品名稱等查詢關鍵字，不含您的個人身份資訊）</td></tr>
+</table>
+<p>相關政策請參閱：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a></p>
+
+<h2>五、資料儲存與安全</h2>
+<ul>
+    <li><strong>本機資料：</strong>儲存於您裝置內的 Room 資料庫，受 Android 系統沙箱保護。</li>
+    <li><strong>雲端資料：</strong>儲存於 Google Firebase Cloud Firestore，傳輸過程採 HTTPS 加密。僅您登入的帳號可存取屬於您的資料。</li>
+    <li>我們採取合理技術措施保護資料，但無法保證網路傳輸或儲存系統絕對安全。</li>
+</ul>
+
+<h2>六、資料保留與刪除</h2>
+<ul>
+    <li>本機資料會保留至您解除安裝本 App，或於 App 內清除資料為止。</li>
+    <li>雲端資料會保留至您刪除帳號或要求我們刪除為止。</li>
+    <li>您可於 App「設定」頁面執行「刪除帳號」，系統將刪除 Firebase 上所有與您帳號相關的雲端資料，並清除本機用藥紀錄。若系統要求您重新登入以確認身分，請依畫面指示操作後再次嘗試。</li>
+</ul>
+
+<h2>七、您的權利</h2>
+<p>依適用之個人資料保護法規，您有權：</p>
+<ul>
+    <li>查詢、閱覽我們所持有與您帳號相關的資料（可透過 App 內功能或來信聯繫）</li>
+    <li>要求更正不正確的資料（可於 App 內直接編輯用藥紀錄）</li>
+    <li>要求刪除帳號及所有雲端資料（App 設定 → 刪除帳號）</li>
+    <li>停止使用雲端同步（登出帳號即可；本機資料仍保留於裝置）</li>
+</ul>
+
+<h2>八、兒童隱私</h2>
+<p>本 App 主要供成年人或照顧者管理用藥使用，並非專為 13 歲以下兒童設計。我們不會故意收集 13 歲以下兒童的個人資料。若您認為我們不慎收集了兒童資料，請聯繫我們，我們將儘速刪除。</p>
+
+<h2>九、醫療免責聲明</h2>
+<p>本 App 提供的藥物資訊、交互作用警示及翻譯內容僅供參考，<strong>無法取代醫師、藥師的專業診斷與建議</strong>。用藥相關決定請務必諮詢您的主治醫師或社區藥師。</p>
+
+<h2>十、政策變更</h2>
+<p>我們可能因法規要求或功能更新而修訂本政策。修訂後將更新本頁面頂部之「最後更新」日期。重大變更時，我們將於 App 內或以其他適當方式通知您。繼續使用本 App 即視為接受修訂後之政策。</p>
+
+<h2>十一、聯絡我們</h2>
+<p>若對本隱私權政策或您的個人資料有任何疑問、申訴或刪除請求，請來信：</p>
+<p><strong>Email：</strong><a href="mailto:support@ataraxyfield.com">support@ataraxyfield.com</a></p>
+<p>我們將於合理時間內回覆您的請求。</p>
+
+</body>
+</html>
